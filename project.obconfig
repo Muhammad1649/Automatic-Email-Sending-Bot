@@ -1,0 +1,35 @@
+{
+  "ProjectID": "36cd8e48-8ed3-4a6e-aeee-b9b89563ee91",
+  "ProjectName": "SheCreateNGWomensDayThankyouMessage",
+  "ProjectType": "OpenBots",
+  "Main": "Main.obscript",
+  "Version": "1.7.0.0",
+  "ProjectArguments": [],
+  "ProjectDependencies": [
+    {
+      "Name": "OpenBots.Commands.Core",
+      "Version": "1.7.0",
+      "PackageHash": "BgPfCyYRyeS7nO19+TqtIdxBjpEUpV2rtZ9WNRQdmh59+1CjdtmwRyPm79DE/3iwC4Inor2A+bfEIbB2S7mRWQ=="
+    },
+    {
+      "Name": "OpenBots.Commands.DataManipulation",
+      "Version": "1.7.0",
+      "PackageHash": "pf+60MmwHVnwv4si8wDjkGKouwFikDHY5OEAaXV2T7f/Sb6ADmS4vwGzaOnBu4x5Ad3uDxwwKTAOxR/dnErkzA=="
+    },
+    {
+      "Name": "OpenBots.Commands.Microsoft",
+      "Version": "1.7.0",
+      "PackageHash": "wzazwWuq5iT42NsXwO70HQC93uLc/mD+yiCv3zwousWnp4gLA/NUgjzLM/KwiFqohQ4mRlVXsuYuw3TKylW9yQ=="
+    },
+    {
+      "Name": "OpenBots.Commands.SystemAutomation",
+      "Version": "1.7.0",
+      "PackageHash": "PBAj1QNdmcqHwkyGvYqMuhwWxQUcwt7CYPXWIuhO4UXR7PUDgIj3U3KQx9d3Twh/ZsFUWmTOYXMXThQKhGjsog=="
+    },
+    {
+      "Name": "OpenBots.Commands.UIAutomation",
+      "Version": "1.7.0",
+      "PackageHash": "gwx8zcT5ZdjKBwQxdKsxkOQhGrN2WOH9srhOgJfb9YfIt4Cswli9fmbZTDdrBJqq3pLgZB0g5vVwPLWG7VLu4Q=="
+    }
+  ]
+}

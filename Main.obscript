@@ -1,0 +1,617 @@
+{
+  "$type": "OpenBots.Core.Script.Script, OpenBots.Core",
+  "Commands": [
+    {
+      "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+      "ScriptCommand": {
+        "$type": "OpenBots.Commands.Core.SecureData.NewSecureStringCommand, OpenBots.Commands.Core",
+        "v_Input": "\"ippcmpukefezshxh\"",
+        "v_OutputUserVariableName": "vPassword",
+        "Encrypted": false,
+        "CommandID": "de6ac22d-fa7c-441c-b2e1-a310721439c7",
+        "CommandName": "NewSecureStringCommand",
+        "SelectionName": "New SecureString",
+        "LineNumber": 1,
+        "IsCommented": false,
+        "PauseBeforeExecution": false,
+        "CommandEnabled": true,
+        "ScopeStartCommand": false,
+        "v_IsPrivate": false,
+        "v_ErrorHandling": "None",
+        "v_Comment": null
+      },
+      "AdditionalScriptCommands": null
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+      "ScriptCommand": {
+        "$type": "OpenBots.Commands.Microsoft.Excel.ExcelCreateApplicationCommand, OpenBots.Commands.Microsoft",
+        "v_InstanceName": "vExcelInstance",
+        "v_NewOpenWorkbook": "Open Workbook",
+        "v_FilePath": "@\"C:\\Users\\USER\\Desktop\\She Create NG Womens Day\\Attendance List.xlsx\"",
+        "v_Visible": "No",
+        "v_UpdateLinks": "Always",
+        "v_Password": null,
+        "v_CloseAllInstances": "Yes",
+        "CommandID": "3f1cc5d0-e23c-45be-b570-cae1a4e75091",
+        "CommandName": "ExcelCreateApplicationCommand",
+        "SelectionName": "Create Excel Application",
+        "LineNumber": 2,
+        "IsCommented": false,
+        "PauseBeforeExecution": false,
+        "CommandEnabled": true,
+        "ScopeStartCommand": false,
+        "v_IsPrivate": false,
+        "v_ErrorHandling": "Report Error",
+        "v_Comment": null
+      },
+      "AdditionalScriptCommands": null
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+      "ScriptCommand": {
+        "$type": "OpenBots.Commands.Microsoft.Excel.Range.ExcelGetRangeCommand, OpenBots.Commands.Microsoft",
+        "v_InstanceName": "vExcelInstance",
+        "v_Range": "\"A1:\"",
+        "v_AddHeaders": "Yes",
+        "v_Formulas": "No",
+        "v_OutputUserVariableName": "vTable",
+        "CommandID": "9cca82ce-cf43-4c44-aef6-60566bd8f51c",
+        "CommandName": "ExcelGetRangeCommand",
+        "SelectionName": "Get Range",
+        "LineNumber": 3,
+        "IsCommented": false,
+        "PauseBeforeExecution": false,
+        "CommandEnabled": true,
+        "ScopeStartCommand": false,
+        "v_IsPrivate": false,
+        "v_ErrorHandling": "None",
+        "v_Comment": null
+      },
+      "AdditionalScriptCommands": null
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+      "ScriptCommand": {
+        "$type": "OpenBots.Commands.DataManipulation.DataTable.GetDataRowCountCommand, OpenBots.Commands.DataManipulation",
+        "v_DataTable": "vTable",
+        "v_OutputUserVariableName": "vLoopCount",
+        "CommandID": "ef9e9513-7b44-4a6d-9795-6e290ef51576",
+        "CommandName": "GetDataRowCountCommand",
+        "SelectionName": "Get DataRow Count",
+        "LineNumber": 4,
+        "IsCommented": false,
+        "PauseBeforeExecution": false,
+        "CommandEnabled": true,
+        "ScopeStartCommand": false,
+        "v_IsPrivate": false,
+        "v_ErrorHandling": "Report Error",
+        "v_Comment": null
+      },
+      "AdditionalScriptCommands": null
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+      "ScriptCommand": {
+        "$type": "OpenBots.Commands.Microsoft.Word.WordCreateApplicationCommand, OpenBots.Commands.Microsoft",
+        "v_InstanceName": "vWordInstanceThankyouMessage",
+        "v_NewOpenDocument": "Open Document",
+        "v_FilePath": "@\"C:\\Users\\USER\\Desktop\\She Create NG Womens Day\\Thankyou Message.docx\"",
+        "v_Visible": "No",
+        "v_CloseAllInstances": "No",
+        "CommandID": "4733e3c2-0376-45e5-b3ac-7795189918dd",
+        "CommandName": "WordCreateApplicationCommand",
+        "SelectionName": "Create Word Application",
+        "LineNumber": 5,
+        "IsCommented": false,
+        "PauseBeforeExecution": false,
+        "CommandEnabled": true,
+        "ScopeStartCommand": false,
+        "v_IsPrivate": false,
+        "v_ErrorHandling": "Report Error",
+        "v_Comment": null
+      },
+      "AdditionalScriptCommands": null
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+      "ScriptCommand": {
+        "$type": "OpenBots.Commands.Microsoft.Word.WordCreateApplicationCommand, OpenBots.Commands.Microsoft",
+        "v_InstanceName": "vWordInstanceSpecialThankyouMessage",
+        "v_NewOpenDocument": "Open Document",
+        "v_FilePath": "@\"C:\\Users\\USER\\Desktop\\She Create NG Womens Day\\Special Thankyou Message.docx\"",
+        "v_Visible": "No",
+        "v_CloseAllInstances": "No",
+        "CommandID": "b907af54-6fed-4bc9-8366-fa777e67a1b9",
+        "CommandName": "WordCreateApplicationCommand",
+        "SelectionName": "Create Word Application",
+        "LineNumber": 6,
+        "IsCommented": false,
+        "PauseBeforeExecution": false,
+        "CommandEnabled": true,
+        "ScopeStartCommand": false,
+        "v_IsPrivate": false,
+        "v_ErrorHandling": "Report Error",
+        "v_Comment": null
+      },
+      "AdditionalScriptCommands": null
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+      "ScriptCommand": {
+        "$type": "OpenBots.Commands.Microsoft.Word.Document.WordReadDocumentCommand, OpenBots.Commands.Microsoft",
+        "v_InstanceName": "vWordInstanceThankyouMessage",
+        "v_OutputUserVariableName": "vThankyouMessage",
+        "CommandID": "efb626f1-4660-40a5-b74d-9398314cc93f",
+        "CommandName": "WordReadDocumentCommand",
+        "SelectionName": "Read Document",
+        "LineNumber": 7,
+        "IsCommented": false,
+        "PauseBeforeExecution": false,
+        "CommandEnabled": true,
+        "ScopeStartCommand": false,
+        "v_IsPrivate": false,
+        "v_ErrorHandling": "Report Error",
+        "v_Comment": null
+      },
+      "AdditionalScriptCommands": null
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+      "ScriptCommand": {
+        "$type": "OpenBots.Commands.Microsoft.Word.Document.WordReadDocumentCommand, OpenBots.Commands.Microsoft",
+        "v_InstanceName": "vWordInstanceSpecialThankyouMessage",
+        "v_OutputUserVariableName": "vSpecialThankyouMessage",
+        "CommandID": "cb450c62-9c2e-4e99-b20e-dae86a1e4912",
+        "CommandName": "WordReadDocumentCommand",
+        "SelectionName": "Read Document",
+        "LineNumber": 8,
+        "IsCommented": false,
+        "PauseBeforeExecution": false,
+        "CommandEnabled": true,
+        "ScopeStartCommand": false,
+        "v_IsPrivate": false,
+        "v_ErrorHandling": "Report Error",
+        "v_Comment": null
+      },
+      "AdditionalScriptCommands": null
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+      "ScriptCommand": {
+        "$type": "OpenBots.Commands.Core.Variable.SetVariableCommand, OpenBots.Commands.Core",
+        "v_Input": "\"IWD She Create NG\"",
+        "v_OutputUserVariableName": "vMessageTitle",
+        "CommandID": "865b481d-da9b-4c72-931c-752696d0c9de",
+        "CommandName": "SetVariableCommand",
+        "SelectionName": "Set Variable",
+        "LineNumber": 9,
+        "IsCommented": false,
+        "PauseBeforeExecution": false,
+        "CommandEnabled": true,
+        "ScopeStartCommand": false,
+        "v_IsPrivate": false,
+        "v_ErrorHandling": "Report Error",
+        "v_Comment": null
+      },
+      "AdditionalScriptCommands": null
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+      "ScriptCommand": {
+        "$type": "OpenBots.Commands.Core.Loop.LoopNumberOfTimesCommand, OpenBots.Commands.Core",
+        "v_LoopParameter": "vLoopCount",
+        "CommandID": "c71409f6-c175-45c4-863d-c34e431bb59c",
+        "CommandName": "LoopNumberOfTimesCommand",
+        "SelectionName": "Loop Number Of Times",
+        "LineNumber": 10,
+        "IsCommented": false,
+        "PauseBeforeExecution": false,
+        "CommandEnabled": true,
+        "ScopeStartCommand": true,
+        "v_IsPrivate": false,
+        "v_ErrorHandling": "Report Error",
+        "v_Comment": null
+      },
+      "AdditionalScriptCommands": [
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Microsoft.Excel.Cell.ExcelGetCellCommand, OpenBots.Commands.Microsoft",
+            "v_InstanceName": "vExcelInstance",
+            "v_CellLocation": "\"A\" + vLoopIteration.ToString()",
+            "v_Formulas": "No",
+            "v_OutputUserVariableName": "vName",
+            "CommandID": "69ac7a50-9cf0-41dc-bd99-33fe7d5beaa4",
+            "CommandName": "ExcelGetCellCommand",
+            "SelectionName": "Get Cell",
+            "LineNumber": 11,
+            "IsCommented": false,
+            "PauseBeforeExecution": false,
+            "CommandEnabled": true,
+            "ScopeStartCommand": false,
+            "v_IsPrivate": false,
+            "v_ErrorHandling": "Report Error",
+            "v_Comment": null
+          },
+          "AdditionalScriptCommands": null
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Microsoft.Excel.Cell.ExcelGetCellCommand, OpenBots.Commands.Microsoft",
+            "v_InstanceName": "vExcelInstance",
+            "v_CellLocation": "\"B\" + vLoopIteration.ToString()",
+            "v_Formulas": "No",
+            "v_OutputUserVariableName": "vEmail",
+            "CommandID": "94af8212-13a1-4fca-9060-1e698cbb6a79",
+            "CommandName": "ExcelGetCellCommand",
+            "SelectionName": "Get Cell",
+            "LineNumber": 12,
+            "IsCommented": false,
+            "PauseBeforeExecution": false,
+            "CommandEnabled": true,
+            "ScopeStartCommand": false,
+            "v_IsPrivate": false,
+            "v_ErrorHandling": "Report Error",
+            "v_Comment": null
+          },
+          "AdditionalScriptCommands": null
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Core.If.BeginIfCommand, OpenBots.Commands.Core",
+            "v_Option": "Inline",
+            "v_Condition": "vLoopIteration == 1",
+            "v_ActionType": null,
+            "v_ActionParameterTable": [],
+            "CommandID": "c4bb0ebe-aa4b-4178-a0d9-1445e2d19a6e",
+            "CommandName": "BeginIfCommand",
+            "SelectionName": "If",
+            "LineNumber": 13,
+            "IsCommented": false,
+            "PauseBeforeExecution": false,
+            "CommandEnabled": true,
+            "ScopeStartCommand": true,
+            "v_IsPrivate": false,
+            "v_ErrorHandling": "Report Error",
+            "v_Comment": null
+          },
+          "AdditionalScriptCommands": [
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.SystemAutomation.Email.SendSMTPEmailCommand, OpenBots.Commands.SystemAutomation",
+                "v_SMTPHost": "\"smtp.gmail.com\"",
+                "v_SMTPPort": "\"465\"",
+                "v_SMTPUserName": "\"muhammadabubakar1649@gmail.com\"",
+                "v_SMTPPassword": "vPassword",
+                "v_SMTPRecipients": "new List<String>{vEmail}",
+                "v_SMTPSubject": "vMessageTitle",
+                "v_SMTPBody": "\"Dear \" + vName + \", \" + vSpecialThankyouMessage",
+                "v_SMTPAttachments": null,
+                "CommandID": "042bd33e-5bef-426f-a3e2-ae924f879bd0",
+                "CommandName": "SendSMTPEmailCommand",
+                "SelectionName": "Send SMTP Email",
+                "LineNumber": 14,
+                "IsCommented": false,
+                "PauseBeforeExecution": false,
+                "CommandEnabled": true,
+                "ScopeStartCommand": false,
+                "v_IsPrivate": false,
+                "v_ErrorHandling": "Report Error",
+                "v_Comment": null
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.If.ElseCommand, OpenBots.Commands.Core",
+                "CommandID": "f4ef8519-7e63-4ebb-b96e-ab49d0a33705",
+                "CommandName": "ElseCommand",
+                "SelectionName": "Else",
+                "LineNumber": 15,
+                "IsCommented": false,
+                "PauseBeforeExecution": false,
+                "CommandEnabled": true,
+                "ScopeStartCommand": false,
+                "v_IsPrivate": false,
+                "v_ErrorHandling": "Report Error",
+                "v_Comment": null
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.SystemAutomation.Email.SendSMTPEmailCommand, OpenBots.Commands.SystemAutomation",
+                "v_SMTPHost": "\"smtp.gmail.com\"",
+                "v_SMTPPort": "\"465\"",
+                "v_SMTPUserName": "\"muhammadabubakar1649@gmail.com\"",
+                "v_SMTPPassword": "vPassword",
+                "v_SMTPRecipients": "new List<String>{vEmail}",
+                "v_SMTPSubject": "vMessageTitle",
+                "v_SMTPBody": "\"Dear \" + vName + \", \" + vThankyouMessage",
+                "v_SMTPAttachments": null,
+                "CommandID": "25a82ff7-8009-47a0-84c1-5693f23c5a35",
+                "CommandName": "SendSMTPEmailCommand",
+                "SelectionName": "Send SMTP Email",
+                "LineNumber": 16,
+                "IsCommented": false,
+                "PauseBeforeExecution": false,
+                "CommandEnabled": true,
+                "ScopeStartCommand": false,
+                "v_IsPrivate": false,
+                "v_ErrorHandling": "Report Error",
+                "v_Comment": null
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.If.EndIfCommand, OpenBots.Commands.Core",
+                "IfType": "If",
+                "CommandID": "7e3662ae-79fd-43ea-819b-957de8d9e380",
+                "CommandName": "EndIfCommand",
+                "SelectionName": "End If",
+                "LineNumber": 17,
+                "IsCommented": false,
+                "PauseBeforeExecution": false,
+                "CommandEnabled": true,
+                "ScopeStartCommand": false,
+                "v_IsPrivate": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null
+              },
+              "AdditionalScriptCommands": null
+            }
+          ]
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Core.Variable.SetVariableCommand, OpenBots.Commands.Core",
+            "v_Input": "vLoopIteration + 1",
+            "v_OutputUserVariableName": "vLoopIteration",
+            "CommandID": "fa304bc9-0e99-42b7-866f-d33aa6dd05c3",
+            "CommandName": "SetVariableCommand",
+            "SelectionName": "Set Variable",
+            "LineNumber": 18,
+            "IsCommented": false,
+            "PauseBeforeExecution": false,
+            "CommandEnabled": true,
+            "ScopeStartCommand": false,
+            "v_IsPrivate": false,
+            "v_ErrorHandling": "Report Error",
+            "v_Comment": null
+          },
+          "AdditionalScriptCommands": null
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Core.Loop.EndLoopCommand, OpenBots.Commands.Core",
+            "LoopType": "Loop Number Of Times",
+            "CommandID": "d93c889b-bb61-42d9-87a9-fcf61a625644",
+            "CommandName": "EndLoopCommand",
+            "SelectionName": "End Loop",
+            "LineNumber": 19,
+            "IsCommented": false,
+            "PauseBeforeExecution": false,
+            "CommandEnabled": true,
+            "ScopeStartCommand": false,
+            "v_IsPrivate": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": null
+          },
+          "AdditionalScriptCommands": null
+        }
+      ]
+    }
+  ],
+  "Variables": [
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vEmail",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": ""
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vExcelInstance",
+      "VariableType": "OpenBots.Core.Model.ApplicationModel.OBAppInstance, OpenBots.Core, Version=1.7.0.0, Culture=neutral, PublicKeyToken=null",
+      "VariableValue": ""
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vLoopCount",
+      "VariableType": "System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": ""
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vLoopIteration",
+      "VariableType": "System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": "1"
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vMessageTitle",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": ""
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vName",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": ""
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vPassword",
+      "VariableType": "System.Security.SecureString, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": ""
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vSpecialThankyouMessage",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": ""
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vTable",
+      "VariableType": "System.Data.DataTable, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": ""
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vThankyouMessage",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": ""
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vWordInstance",
+      "VariableType": "OpenBots.Core.Model.ApplicationModel.OBAppInstance, OpenBots.Core, Version=1.7.0.0, Culture=neutral, PublicKeyToken=null",
+      "VariableValue": ""
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vWordInstanceSpecialThankyouMessage",
+      "VariableType": "OpenBots.Core.Model.ApplicationModel.OBAppInstance, OpenBots.Core, Version=1.7.0.0, Culture=neutral, PublicKeyToken=null",
+      "VariableValue": ""
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vWordInstanceThankyouMessage",
+      "VariableType": "OpenBots.Core.Model.ApplicationModel.OBAppInstance, OpenBots.Core, Version=1.7.0.0, Culture=neutral, PublicKeyToken=null",
+      "VariableValue": ""
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "ProjectPath",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": "\"Value Provided at Runtime\""
+    }
+  ],
+  "Arguments": [],
+  "Elements": [],
+  "ImportedNamespaces": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Collections.Generic.List`1[[OpenBots.Core.Script.AssemblyReference, OpenBots.Core]], mscorlib]], mscorlib",
+    "Microsoft.Office.Interop.Outlook": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "Microsoft.Office.Interop.Outlook",
+        "AssemblyVersion": "15.0.0.0"
+      }
+    ],
+    "MimeKit": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "MimeKit",
+        "AssemblyVersion": "2.15.0.0"
+      }
+    ],
+    "Newtonsoft.Json.Linq": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "Newtonsoft.Json",
+        "AssemblyVersion": "13.0.0.0"
+      }
+    ],
+    "OpenBots.Core.Model.ApplicationModel": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "OpenBots.Core",
+        "AssemblyVersion": "1.7.0.0"
+      }
+    ],
+    "System": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "mscorlib",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Collections.Generic": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "mscorlib",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Data": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Data",
+        "AssemblyVersion": "4.0.0.0"
+      },
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Data.DataSetExtensions",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Drawing": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Drawing",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Linq": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Core",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Security": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "mscorlib",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Text": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "mscorlib",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Text.RegularExpressions": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Threading.Tasks": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "mscorlib",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Windows.Forms": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Windows.Forms",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Xml.Linq": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Xml.Linq",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ]
+  },
+  "Version": "1.7.0.0"
+}
